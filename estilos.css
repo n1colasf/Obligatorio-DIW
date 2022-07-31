@@ -1,0 +1,340 @@
+
+/*-------- ELEMENTOS ------ */
+*{
+    margin:0;
+    padding:0
+}
+body{
+    font-family: "Calibri", sans-serif;
+}
+header{
+    background-color: whitesmoke;
+}
+header img{
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+a {
+	text-decoration:none;	
+    color: whitesmoke;
+}
+h1{
+    color:rgb(20, 35, 67);
+    font-size: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+h2{
+    font-size: 18px;
+}
+article p{
+    padding-top: 15px;
+}
+article div{
+    padding-left: 10px;
+}
+section{
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;   
+}
+figcaption{
+    flex: 1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/*-------- PSEUDO ELEMENTOS ------ */
+::placeholder{
+    padding-left: 10px;
+}
+
+
+/*-------- MENU ------ */
+#menu{ 
+    background-color: rgb(20, 35, 67);
+	}
+#menu ul{
+    text-align: center;	
+}
+#menu ul li{
+	display:inline-block;
+}
+#menu ul li a{ 
+	display:block;
+	width:150px;
+	height:35px;
+    padding-top: 20px;	
+}
+#menu ul li a:hover{
+	color: black;
+    background-color:rgb(146, 46, 34);
+}
+
+/*-------- PORTADA ------ */
+#portada{
+    height: 400px;
+    background: url(img/PORTADA.png) fixed;
+    background-size: cover;
+    text-align: center;
+    border-bottom: 8px solid rgb(20, 35, 67);
+    
+}
+#portada div{
+    padding: 5%;
+}
+#portada h1{
+    color: whitesmoke;
+    font-size: 70px;
+    -webkit-text-stroke: 3px rgb(146, 46, 34);
+    text-shadow: 4px 4px 8px rgb(43, 43, 43);
+}
+#portada p{
+    color: whitesmoke;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    -webkit-text-stroke: 2px rgb(20, 35, 67);
+    text-shadow: 4px 4px 8px rgb(43, 43, 43);
+}
+
+/*-------- NOTICIAS ------ */
+#noticias article{
+    flex:1 0 46%;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    text-align: justify;
+}
+#noticias article a{
+    width: 100px;
+    display: block;
+    margin: 20px 0;
+    background-color:rgb(146, 46, 34);
+    padding:5px;
+    text-align: center;
+    color: whitesmoke;
+}
+#noticias h2{
+    color:rgb(146, 46, 34)
+}
+#noticias article a:hover{
+    background-color: rgb(20, 35, 67);
+}
+#noticias img{
+    height: 120px;
+    border: 2px solid rgb(20, 35, 67);
+}
+
+
+/*-------- PARTICIPANTES ------ */
+#participantes p:nth-of-type(1){
+    font-weight:bold;
+    font-size: 16px;
+    padding-top: 15px;
+}
+#participantes p:nth-of-type(2){
+    font-size: 16px;
+    color: darkgray;
+    padding-top: 10px;
+}
+#participantes img {
+    border-radius: 50%;
+    height: 100px;
+    border: 2px solid rgb(20, 35, 67);
+}
+#participantes article{
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+/*-------- HOMENAJE ------ */
+
+#homenaje article{
+    display: flex;
+} 
+#homenaje img{
+    width: 350px;
+    border: 2px solid rgb(20, 35, 67);
+}
+#homenaje div{
+    margin-left: 25px;
+    text-align: justify;
+}
+#homenaje p:nth-of-type(3){
+    color: rgb(20, 35, 67);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/*-------- TABLA ------ */
+
+table{
+    width: 100%;
+    margin: 15px;
+    margin-left: 0px;
+    border-spacing: 6px 6px;
+}
+tr{
+    height: 30px;
+}
+tr:nth-child(2), tr:nth-child(3), tr:nth-child(6), tr:nth-child(7){
+    background-color: whitesmoke;
+    height: 35px;
+}
+tr:nth-child(4), tr:nth-child(5) {
+    background-color: lightgray;
+    height: 35px;
+}
+
+
+/*-------- PARTIDOS ------ */
+#partidos{
+    margin-bottom: 40px;
+} 
+#partidos article h2{
+    text-align: left;
+    padding-top: 20px;
+}
+#partidos article h3{
+    text-align: center;
+    padding-top: 20px;
+}
+#partidos article:nth-of-type(1) h2:nth-of-type(1){
+    text-align: left;
+}
+#partidos article p{
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 15px;
+}
+#partidos article div{
+    display: flex;
+}
+#escudos figure{
+    width: 50%;
+    margin-top: 0px;
+    align-items: center;  
+}
+#partidos figure img{
+    border-radius: 50%;
+    height: 75px;
+    border: 2px solid rgb(20, 35, 67);
+}
+#partidos h2:nth-of-type(1){
+    background-color:white;
+}
+#partidos article:nth-of-type(2){
+    background-color: rgb(238, 238, 238);
+}
+#ultimos{
+    flex: 1;
+    text-align: center;
+}
+#final{
+    flex: 1;
+    text-align: center;
+}
+
+
+/*-------- GALERIA ------ */
+#galeria{
+    margin-bottom: 60px;
+} 
+#galeria figure {
+    flex: 1; 
+}
+#galeria img{
+    margin: 5px;
+    height: 180px;
+    border: 2px solid rgb(20, 35, 67);
+}
+
+
+
+/*-------- INSCRIBIRSE ------ */
+#inscribirse{
+    display: inline-block;
+    width: 100%;
+    height: 450px;
+    margin-bottom:0px;
+    background-color: rgb(146, 46, 34);  
+    border-top: 8px solid rgb(20, 35, 67);
+}
+#inscribirse h1{
+    color: whitesmoke;
+    width: 100%;
+    text-align: center; 
+    margin-top: 30px;
+}
+#inscribirse fieldset{
+    display: flex;
+    align-items: center;
+    border: 0px;
+}
+#inscribirse fieldset legend{
+    display: inline-block;
+}
+form fieldset:nth-of-type(1) label:nth-of-type(2){
+    text-align: right;
+    padding: 0;
+} 
+form{
+    width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+}
+input{
+    width: 100%;
+    height: 25px;
+    margin: 5px 0px;
+}
+label, legend {
+    width: 100%;
+    color: whitesmoke;
+    font-size: 14px;
+    padding: 6px;
+}
+select{
+    flex: 1;
+    height: 30px;
+    margin-right: 5px;
+}
+#fechaNac{
+    text-align: center;
+}
+#deporte{
+    width: 350px;
+    height: 60px;
+}
+input[type="date"]{
+    flex: 1;
+}
+input[type="radio"]{
+    width: 50%;
+}
+
+
+/*-------- FOOTER ------ */
+footer {
+    height: 90px;
+    background-color: rgb(20, 35, 67);
+}
+footer img{
+    height: 35px;
+    padding-top: 16px;
+}
+footer figure{
+    text-align: center;
+}
+footer figcaption{
+    color: whitesmoke;
+    font-size: 11px;
+}
